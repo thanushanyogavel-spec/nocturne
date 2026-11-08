@@ -1,0 +1,8 @@
+{
+  "build": "accent-surfaces-consistency-card",
+  "accent": "tints background, card, popover, sidebar, sidebar-accent, muted, border, input",
+  "install_prompt": "removed",
+  "home": {
+    "consistency_card": "16-week heatmap from real entries + streaks"
+  }
+}
