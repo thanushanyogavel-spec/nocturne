@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" class="dark" data-theme="ember" data-accent="ember-glow">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark light" />
+    <meta name="theme-color" content="#14120f" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Nocturne" />
+    <meta
+      name="description"
+      content="Nocturne is a calm, private journaling workspace with a memory graph, focus sessions, ambient sound and a per-day task list. Everything is saved in this browser only — there is no cloud sync."
+    />
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/nocturne-icon-192.png" />
+    <link rel="apple-touch-icon" href="./assets/nocturne-icon-192.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Karla:wght@300..700&family=JetBrains+Mono:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nocturne — a quiet home for your thoughts</title>
+    <script type="module" crossorigin src="/assets/nocturne-app.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/nocturne-base.css">
+  </head>
+  <body>
+    <a class="nc-skip-link" href="#root">Skip to Nocturne</a>
+    <div id="root" role="main" aria-label="Nocturne application" tabindex="-1"></div>
+    <noscript>
+      <main style="max-width: 38rem; margin: 4rem auto; padding: 1.5rem; font: 16px/1.6 system-ui, sans-serif; color: #ece5da; background: #14120f; border-radius: 1rem;">
+        <h1>Nocturne needs JavaScript</h1>
+        <p>Enable JavaScript in your browser to use the journal, tasks, focus tools and local backup features.</p>
+      </main>
+    </noscript>
+    <script>
+      /* Progressive-enhancement layer, loaded at runtime from ./assets/ so it
+         stays a separate, removable file and works on any deploy path. */
+      (function () {
+        var l = document.createElement("link");
+        l.rel = "stylesheet";
+        l.href = "./assets/nocturne-enhancements.css";
+        document.head.appendChild(l);
+        var s = document.createElement("script");
+        s.type = "module";
+        s.src = "./assets/nocturne-enhancements.js";
+        document.body.appendChild(s);
+      })();
+    </script>
+  </body>
+</html>
