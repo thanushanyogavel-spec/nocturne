@@ -1,0 +1,40 @@
+{
+  "id": "./",
+  "name": "Nocturne \u2014 a quiet home for your thoughts",
+  "short_name": "Nocturne",
+  "description": "Nocturne is a calm, private journaling workspace with a seven-track planner, a memory graph, ambient sound and a hidden Wing. Everything is saved in this browser only.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "any",
+  "background_color": "#14120f",
+  "theme_color": "#14120f",
+  "categories": [
+    "lifestyle",
+    "productivity"
+  ],
+  "icons": [
+    {
+      "src": "./assets/nocturne-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/nocturne-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/nocturne-icon-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
